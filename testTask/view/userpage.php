@@ -1,8 +1,9 @@
-<?php 
+<?php
     require_once '../controllers/php/setting.php';
     header('Content-Type: text/html; charset=utf-8');
     session_start();
-
+    
+    if ($_SESSION['ckeckReg'] != true) header("Location: ../index.php");
 
     $Connect = mysqli_connect(HOST, USER, PASSWORD, DB); 
     if (!$Connect) echo "Not connect to database"; 

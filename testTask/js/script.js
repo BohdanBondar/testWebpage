@@ -20,7 +20,7 @@ function checkPass(pass) {
     return pattern.test(pass);
 }
 
-
+//Проверка пароля
 function checkPassword() {
 
     var password = document.getElementById('input-type-input-password').value; // Получаем пароль из формы
@@ -212,6 +212,13 @@ function closewindowopen(b) {
 function toLogin() {
     document.getElementById('form-registration').style.display = "none";
     document.getElementById('form-login').style.display = "block";
+       
+}
+
+function toRegistration() {
+    document.getElementById('form-login').style.display = "none";
+    document.getElementById('form-registration').style.display = "block";
+    
 }
 
 function dataverificationlogin(e) {
